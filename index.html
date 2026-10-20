@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bezels brings you the latest anime news, manga updates, rankings and recommendations.">
+  <title>Bezels — Anime News & Updates</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b0b12;
+      color: #f5f5fa;
+    }
+    header {
+      padding: 22px 7%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #272735;
+    }
+    .logo { font-size: 30px; font-weight: 900; letter-spacing: 2px; }
+    .logo span { color: #a78bfa; }
+    nav a {
+      color: #cccbd8;
+      text-decoration: none;
+      margin-left: 18px;
+      font-size: 14px;
+    }
+    .hero {
+      padding: 65px 7%;
+      background: linear-gradient(120deg, #21143b, #10101c 70%);
+    }
+    .tag { color: #c4b5fd; text-transform: uppercase; letter-spacing: 2px; }
+    h1 { font-size: clamp(36px, 6vw, 62px); margin: 15px 0; }
+    .hero p { color: #c7c6d3; line-height: 1.7; max-width: 600px; }
+    main { padding: 35px 7% 60px; }
+    .section-title { font-size: 27px; margin-bottom: 22px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 22px;
+    }
+    article {
+      background: #15151f;
+      border: 1px solid #292938;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .art {
+      min-height: 145px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, #39235b, #15152a);
+      font-size: 42px;
+    }
+    .content { padding: 20px; }
+    .category { color: #c4b5fd; font-size: 12px; text-transform: uppercase; }
+    h3 { line-height: 1.4; }
+    .content p { color: #aaa9bb; font-size: 14px; line-height: 1.6; }
+    footer {
+      padding: 25px 7%;
+      border-top: 1px solid #272735;
+      color: #9998aa;
+      font-size: 13px;
+    }
+    a:focus-visible { outline: 2px solid #c4b5fd; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">BEZELS<span>.</span></div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#news">Anime News</a>
+      <a href="#manga">Manga</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="tag">Your anime universe</div>
+    <h1>Beyond the<br>Anime World.</h1>
+    <p>Anime news, manga updates, rankings and recommendations — all in one place for true anime fans.</p>
+  </section>
+
+  <main id="news">
+    <h2 class="section-title">Latest Stories</h2>
+    <div class="grid">
+      <article>
+        <div class="art">⚔️</div>
+        <div class="content">
+          <div class="category">Anime News</div>
+          <h3>Big Anime Announcements Are Coming</h3>
+          <p>Your next anime update belongs here. Replace this sample with a verified news story.</p>
+        </div>
+      </article>
+      <article id="manga">
+        <div class="art">📖</div>
+        <div class="content">
+          <div class="category">Manga Updates</div>
+          <h3>What's Happening in the Manga World?</h3>
+          <p>Add manga chapter news, release information and official announcements here.</p>
+        </div>
+      </article>
+      <article>
+        <div class="art">🔥</div>
+        <div class="content">
+          <div class="category">Rankings</div>
+          <h3>Anime Worth Adding to Your Watchlist</h3>
+          <p>Share your own rankings and recommendations with the Bezels community.</p>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer id="about">
+    <strong>BEZELS.</strong> — All about anime.<br><br>
+    © 2026 Bezels. Anime news and fan recommendations.
+  </footer>
+</body>
+</html>
